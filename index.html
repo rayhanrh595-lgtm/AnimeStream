@@ -8,17 +8,24 @@
 </head>
 <body>
 
-    <!-- হেডার বা লোগো সেকশন -->
+    <!-- হেডার ও সার্চ সেকশন -->
     <header>
-        <h1>My Anime Stream</h1>
+        <h1>AnimeStream</h1>
         <input type="text" id="searchInput" placeholder="Search anime...">
     </header>
 
-    <!-- মেইন কন্টেন্ট: অ্যানিমে লিস্ট ও ভিডিও প্লেয়ার -->
+    <!-- ক্যাটাগরি ফিল্টার বার -->
+    <nav class="category-bar">
+        <button class="cat-btn active" onclick="filterCategory('All')">All</button>
+        <button class="cat-btn" onclick="filterCategory('Action')">Action</button>
+        <button class="cat-btn" onclick="filterCategory('Romance')">Romance</button>
+    </nav>
+
+    <!-- মেইন কন্টেন্ট -->
     <main class="container">
-        <!-- অ্যানিমে কার্টুন বা লিস্ট সেকশন -->
+        <!-- অ্যানিমে লিস্ট সাইডবার -->
         <div class="anime-list" id="animeList">
-            <!-- জাভাস্ক্রিপ্ট দিয়ে এখানে অ্যানিমে কার্ডগুলো অটো আসবে -->
+            <!-- জাভাস্ক্রিপ্ট দিয়ে এখানে ডেটা লোড হবে -->
         </div>
 
         <!-- ভিডিও প্লেয়ার সেকশন -->

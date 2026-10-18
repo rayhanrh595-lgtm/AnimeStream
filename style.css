@@ -113,3 +113,37 @@ header input:focus {
     height: 100%;
     border: none;
 }
+
+
+.category-bar {
+    display: flex;
+    gap: 10px;
+    padding: 15px 30px;
+    background-color: #141622;
+}
+
+.cat-btn {
+    background-color: #1a1c29;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cat-btn:hover, .cat-btn.active {
+    background-color: #ff9800;
+    color: #000;
+    font-weight: bold;
+}
+
+.anime-card .badge {
+    font-size: 11px;
+    color: #a0a0a0;
+    background-color: #2b2d42;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+}
