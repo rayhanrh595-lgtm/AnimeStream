@@ -1,0 +1,56 @@
+/* css/anime.css — anime details page */
+
+.anime-hero {
+  position: relative; margin-top: 1.75rem; border-radius: 22px; overflow: hidden;
+  border: 1px solid var(--border); background: var(--surface); box-shadow: var(--shadow);
+}
+.anime-hero-backdrop {
+  position: absolute; inset: 0;
+  background: linear-gradient(120deg, rgba(255, 46, 99, 0.18), rgba(168, 85, 247, 0.16) 55%, transparent);
+}
+.anime-hero-inner { position: relative; display: flex; gap: 1.75rem; padding: 1.75rem; }
+
+.anime-poster {
+  flex: 0 0 220px; aspect-ratio: 2 / 3; border-radius: 14px; overflow: hidden;
+  background: var(--surface-2); border: 1px solid var(--border);
+}
+.anime-poster img { width: 100%; height: 100%; object-fit: cover; }
+
+.anime-hero-info { display: grid; align-content: start; gap: 0.7rem; }
+.anime-title { font-size: clamp(1.5rem, 3.5vw, 2.4rem); font-weight: 800; }
+.anime-alt { color: var(--muted); font-size: 0.85rem; }
+.anime-synopsis {
+  color: #c3c3d2; font-size: 0.92rem;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+}
+
+.anime-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.5rem; align-items: start; }
+.anime-main { min-width: 0; }
+.anime-side { min-width: 0; }
+
+.detail-list { margin: 0; display: grid; gap: 0.6rem; }
+.detail-list div { display: flex; justify-content: space-between; gap: 1rem; font-size: 0.86rem; }
+.detail-list dt { color: var(--muted); }
+.detail-list dd { margin: 0; text-align: right; font-weight: 600; }
+
+.episode-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 0.55rem; }
+.episode-btn {
+  display: block; text-align: center; padding: 0.6rem 0.5rem; border-radius: 10px;
+  background: var(--surface-2); border: 1px solid var(--border);
+  font-size: 0.82rem; font-weight: 600; transition: all 0.2s var(--ease);
+}
+.episode-btn:hover { border-color: var(--accent); background: rgba(255, 46, 99, 0.12); }
+.episode-btn span { display: block; color: var(--muted); font-size: 0.68rem; font-weight: 500; margin-top: 0.2rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+@media (max-width: 900px) {
+  .anime-body { grid-template-columns: minmax(0, 1fr); }
+  .anime-hero-inner { flex-direction: column; }
+  .anime-poster { flex: 0 0 auto; width: 160px; }
+}
+
+@media (max-width: 640px) {
+  .anime-hero-inner { padding: 1rem; gap: 1rem; }
+  .anime-poster { width: 120px; }
+  .episode-grid { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+}
