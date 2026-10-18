@@ -1,42 +1,521 @@
 [
+   
     {
-        "id": 1,
-        "title": "Naruto - Episode 1",
+        "id": 41503,
+        "label": "S1 E1",
+        "title": "Enter: Naruto Uzumaki!",
+        "overview": "Welcome to the Village Hidden in the Leaves, where deadly serious Ninja roam the landscape and the seriously mischievous Naruto Uzumaki causes trouble everywhere he goes. But when he steals the ancient scroll of sealing, he unleashes a rare power rarely seen in a 12-year-old boy!",
+        "airDate": "2002-10-03",
         "category": "Action",
         "subCategory": "Subbed",
-        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "embedUrl": "https://vidstream.pro/embed/sample"
     },
     {
-        "id": 2,
-        "title": "Attack on Titan - Season 1 Ep 1",
-        "category": "Action",
-        "subCategory": "Dubbed",
-        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 3,
-        "title": "Your Lie in April - Episode 1",
-        "category": "Romance",
-        "subCategory": "Subbed",
-        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-    },
-    {
-        "id": 4,
-        "title": "One Piece - Episode 1",
+        "id": 41504,
+        "label": "S1 E2",
+        "title": "My Name Is Konohamaru!",
+        "overview": "Naruto finally graduates from the Ninja Academy and claims to know it all. Well, at least that what he tells Konohamaru, the Village elder's pint-size grandson. Much to the dismay of Ebisu, Konohamaru's teacher and mentor, Naruto teaches him the hormonally lethal \"Sexy Jutsu!\"",
+        "airDate": "2002-10-10",
         "category": "Action",
         "subCategory": "Subbed",
-        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "embedUrl": "https://vidstream.pro/embed/sample"
     },
     {
-        "id": 4,
-        "title": "One Piece - Episode 1",
+        "id": 41505,
+        "label": "S1 E3",
+        "title": "Sasuke and Sakura: Friends or Foes?",
+        "overview": "On the way to becoming a ninja, Naruto must team up with his classmates, the pretty Sakura and the pretty serious Sasuke...",
+        "airDate": "2002-10-17",
         "category": "Action",
         "subCategory": "Subbed",
-        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        "embedUrl": "https://vidstream.pro/embed/sample"
     },
     {
-        "id": 1,
-        "title": "Sample Scraped Anime",
+        "id": 41506,
+        "label": "S1 E4",
+        "title": "Pass or Fail: Survival Test",
+        "overview": "Now that Naruto, Sasuke, and Sakura are a team, they meet with their sensei, the enigmatic and aloof Kakashi.",
+        "airDate": "2002-10-24",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41507,
+        "label": "S1 E5",
+        "title": "You Failed! Kakashi's Final Decision",
+        "overview": "With the threat of failure hanging over their heads, Naruto, Sasuke and Sakura try everything they know to pass the grueling survival test.",
+        "airDate": "2002-10-31",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41508,
+        "label": "S1 E6",
+        "title": "A Dangerous Mission! Journey to the Land of Waves!",
+        "overview": "Tired of doing lame missions, Naruto asks the Hokage to give them something challenging. The Hokage caves and gives them a C-rank mission. They will be bodyguards for a bridge builder. It appears to be a simple mission, until the group is attacked by something more than common thugs...other ninja!",
+        "airDate": "2002-11-07",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41509,
+        "label": "S1 E7",
+        "title": "The Assassin of the Mist!",
+        "overview": "Naruto and his squad arrive in the Land of the Waves and learn that an evil businessman named Gato has taken over the land.",
+        "airDate": "2002-11-14",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41510,
+        "label": "S1 E8",
+        "title": "The Oath of Pain",
+        "overview": "With Kakashi captured, Naruto, Sasuke and Sakura must defend against Zabuza's attacks. Naruto realizes that working together with Sasuke may be the only way to save Kakashi. Will the combined effort of the two be enough to free Kakashi and defeat Zabuza?",
+        "airDate": "2002-11-21",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41511,
+        "label": "S1 E9",
+        "title": "Kakashi: Sharingan Warrior",
+        "overview": "With Kakashi free, the fight between him and Zabuza resumes. Kakashi decides to show Zabuza what the Sharingan is really capable of. Can Kakashi's Sharingan defeat Zabuza? And who is the mysterious person watching the fight?",
+        "airDate": "2002-11-28",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41512,
+        "label": "S1 E10",
+        "title": "The Forest of Chakra",
+        "overview": "With Zabuza gone things are now settling and Tazuna can go and build the bridge without fear. Or so everyone thinks. Kakashi believes something is wrong with Zabuza's death and teaches Naruto, Sakura, and Sasuke a way to train so they could better use their chakra. Is Zabuza really dead?",
+        "airDate": "2002-12-05",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41513,
+        "label": "S1 E11",
+        "title": "The Land Where a Hero Once Lived",
+        "overview": "While Naruto and Sasuke train, Sakura watches over Tazuna. During a nice dinner, Sakura notices a man's face torn from a picture. The man's name was Kaiza, and he was what the country called...a \"hero\". What happened to cause Inari so much pain?",
+        "airDate": "2002-12-12",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41514,
+        "label": "S1 E12",
+        "title": "Battle on the Bridge! Zabuza Returns!",
+        "overview": "Naruto has a dangerous encounter with Haku in the forest, but is Haku there to cause trouble? Naruto and Sasuke better complete their training, as Zabuza is alive and has returned for round 2. Will Kakashi, Sasuke, and Sakura be able to defeat the Demon of the Mist? And, can Naruto arrive in time to help out?",
+        "airDate": "2002-12-19",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41515,
+        "label": "S1 E13",
+        "title": "Haku's Secret Jutsu: Crystal Ice Mirrors",
+        "overview": "Round two with Zabuza has started, but this time...Zabuza has Haku fighting along side him. Haku and Sasuke go at it with Sasuke falling behind until he manages to get a kick in. Meanwhile Naruto deals with some of Gato's henchmen. Back at the bridge Haku uses his secret jutsu, Demonic Ice Mirrors. What does this jutsu hold in store for Sasuke? Will Naruto make it to the bridge in time and save Tsunami and Inari as well?",
+        "airDate": "2002-12-26",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41516,
+        "label": "S1 E14",
+        "title": "The Number One Hyperactive, Knucklehead Ninja Joins the Fight!",
+        "overview": "Naruto finally joins the battle on the bridge. But when Naruto stupidly gets caught in the middle of Haku's jutsu as well, he and Sasuke must work together to escape. Kakashi is unable to help them, as he must deal with Zabuza to protect Sakura and Tazuna. How will the two escape from the ice mirrors without any help?",
+        "airDate": "2003-01-09",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41517,
+        "label": "S1 E15",
+        "title": "Zero Visibility: The Sharingan Shatters",
+        "overview": "Naruto and Sasuke continue to fight Haku and are getting beaten bad. After having Naruto try and escape a few times, Sasuke begins to see a pattern. Meanwhile, outside Kakashi and Zabuza begin their fight. Can Naruto and Sasuke escape from Haku's jutsu? What plan does Zabuza have to defeat the Sharingan?",
+        "airDate": "2003-01-16",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41518,
+        "label": "S1 E16",
+        "title": "The Broken Seal",
+        "overview": "Naruto and Sasuke continue their rigorous battle against Haku. When Haku targets a vulnerable Naruto, Sasuke risks everything to save him. Seeing his friend lie before him, a powerful force awakens inside Naruto. Has Kyubi been set free. If so, can anyone stop him?",
+        "airDate": "2003-01-23",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41519,
+        "label": "S1 E17",
+        "title": "White Past: Hidden Ambition",
+        "overview": "Naruto takes out his rage on Haku, who doesn't stand a chance. However, Naruto realises that Haku is the boy he met back at the forest. Haku tells Naruto the story of his past and asks for Naruto to do him one favour..... Will Naruto do the one thing he could never do just as Haku wishes?",
+        "airDate": "2003-01-30",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41520,
+        "label": "S1 E18",
+        "title": "The Weapons Known as Shinobi",
+        "overview": "Kakashi prepares to stop Zabuza once and for all, but Haku has other plans. Zabuza's employer shows up and he's decided to take matters into his own hands...",
+        "airDate": "2003-02-06",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41521,
+        "label": "S1 E19",
+        "title": "The Demon in the Snow",
+        "overview": "Thinking of Haku, Naruto angrily confronts Zabuza, but he learns that cruel reality is the fate of a ninja.",
+        "airDate": "2003-02-13",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41522,
+        "label": "S1 E20",
+        "title": "A New Chapter Begins: The Chunin Exam!",
+        "overview": "Naruto and his team return to the Village Hidden in the Leaves after their battle in Land of Waves.",
+        "airDate": "2003-02-20",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41523,
+        "label": "S1 E21",
+        "title": "Identify Yourself: Powerful New Rivals",
+        "overview": "After the three ninjas take their leave, Sasuke realizes he has a powerful rival out there. The next day, Kakashi announces that he has recommended all of them for the Chuunin Exams. While Naruto and Sasuke are pleased, Sakura is afraid of letting everyone down. Also, someone decides they aren't ready and decides to test their abilities.",
+        "airDate": "2003-02-27",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41524,
+        "label": "S1 E22",
+        "title": "Chunin Challenge: Rock Lee vs. Sasuke!",
+        "overview": "Rock Lee challenges Sasuke to a one-on-one fight. Naruto grows angry and attacks him, only to be beaten in one attack. Sasuke realizes the challenge and eagerly accepts. But will Sasuke be defeated just as easily by this mysterious ninja? Sasuke's only advantage seems to be his Sharingan, but what happens when not even that will work?",
+        "airDate": "2003-03-06",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41525,
+        "label": "S1 E23",
+        "title": "Genin Takedown! All Nine Rookies Face Off!",
+        "overview": "A reunion of all the rookies isn't a very happy one, as all of them prepare to take the Chuunin Exam. With so many rivals around, Naruto's team will need help from a fellow ninja named Kabuto to know what they're up against. Will the group be able to last through the exam?",
+        "airDate": "2003-03-13",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41526,
+        "label": "S1 E24",
+        "title": "Start Your Engines: The Chunin Exam Begins!",
+        "overview": "The first test of the Chuunin Exam is just that, a written test. When Ibiki issues a strict set of rules, Naruto fails to realize the true objective of the test. Can Naruto realize the truth before time runs out? And what about the tenth question?",
+        "airDate": "2003-03-20",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41527,
+        "label": "S1 E25",
+        "title": "The Tenth Question: All or Nothing!",
+        "overview": "Ibiki declares what seems like a harsh and unreasonable rule for the hardest part of the first exam.",
+        "airDate": "2003-03-27",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41528,
+        "label": "S1 E26",
+        "title": "Special Report: Live from the Forest of Death!",
+        "overview": "Konohamaru, the grandson of Leaf Village’s Third Hokage, shows up at the Chunin Exam site. He comes along with Moegi and Udon to cover the events for the Ninja Academy’s school newspaper. Konohamaru looks up to Naruto like an older brother and through interviews with the characters, recaps their adventures thus far.",
+        "airDate": "2003-04-02",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41529,
+        "label": "S1 E27",
+        "title": "The Chunin Exam Stage 2: The Forest of Death",
+        "overview": "The second exam is about to begin, and every ninja must sign a form so that their team can get either the Heaven or Earth Scroll. The goal is to get one of each scroll and make it to the tower in five days. The groups get their scrolls and the exam begins. Naruto is ambushed by a ninja who poses as him. This ninja doesn't fool Sasuke, who immediately figures it out. Meanwhile, a new foe seeks them out, but who is this foe?",
+        "airDate": "2003-04-02",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41530,
+        "label": "S1 E28",
+        "title": "Eat or Be Eaten: Panic In the Forest",
+        "overview": "To prevent further problems, Sasuke thinks up a password to determine friend from foe, but will it be that simple? Meanwhile Naruto has his hands full with a giant snake. Can he handle this on his own and what about Sasuke and Sakura, can they survive the ordeal?",
+        "airDate": "2003-04-09",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41531,
+        "label": "S1 E29",
+        "title": "Naruto's Counterattack: Never Give In!",
+        "overview": "Sasuke is about to give up and give their scroll to the enemy, when Naruto stops him and accuses him of being a fake. Naruto then turns his attention to the Grass Ninja.... The battle is intense and when the Grass Ninja appears to get the upper hand, can Sasuke muster up the courage to fight?",
+        "airDate": "2003-04-16",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41532,
+        "label": "S1 E30",
+        "title": "The Sharingan Revived: Dragon Flame Jutsu!",
+        "overview": "Sasuke is still stuck in his trance and even Sakura's pleas can't get him back to normal. Meanwhile, Anko searches for the grass ninja fake. When the team appear to get the upper hand the question begs to be asked. Are the ninja truly defeated, or is there more to them than meets the eye?",
+        "airDate": "2003-04-23",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41533,
+        "label": "S1 E31",
+        "title": "Bushy Brow's Pledge: Undying Love and Protection",
+        "overview": "Since Sakura was the only one who did not get injured in the previous battle she must watch over and protect her teammates. Unknown to her though, there are enemies watching from the trees.... They attack, but a friend arrives to help. Will it be enough?",
+        "airDate": "2003-04-30",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41534,
+        "label": "S1 E32",
+        "title": "Sakura Blossoms!",
+        "overview": "Lee in his weakened state is having trouble defeating Dosu. Sakura realises everyone has been protecting her until now and that its her time to protect them! Can Sakura succeed where even Lee failed?",
+        "airDate": "2003-05-07",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41535,
+        "label": "S1 E33",
+        "title": "Battle Formation: Ino-Shika-Cho!",
+        "overview": "With Sakura defeated and facing certain death, more reinforcements step into the fray. However, they sense an even bigger level of power, and its not coming from the sound trio! Meanwhile Sasuke wakes up with an ominous dark aura surrounding him and the mysterious seal spreading over his body. He has but one goal....make his enemies pay!",
+        "airDate": "2003-05-14",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41536,
+        "label": "S1 E34",
+        "title": "Akamaru Trembles: Gaara's Cruel Strength!",
+        "overview": "Kiba, Shino, and Hinata decide to try and eliminate their opponents by taking more scrolls. They arrive upon a battlefield where three Rain ninjas are battling Gaara, Kankuro, and Temari. They remain hidden and observe the battle, thinking one of the Rain ninjas is a dangerous foe. After realizing Gaara's amazing abilities, they discover who is the really the dangerous one, and will be lucky if they can sneak away with their lives!",
+        "airDate": "2003-05-21",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41537,
+        "label": "S1 E35",
+        "title": "The Scroll's Secret: No Peeking Allowed",
+        "overview": "To heal their wounds, Naruto and his team take a much-needed rest after their battle against the Sound ninja. But it has already been four days since the start of the exam and there is only one day remaining until time expires.",
+        "airDate": "2003-05-28",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41538,
+        "label": "S1 E36",
+        "title": "Clone vs. Clone: Mine are Better than Yours!",
+        "overview": "Naruto's team joins Kabuto on their journey to the tower, but on the way, they are trapped by the genjutsu (illusion technique) of the Hidden Rain Village's genin (low rank ninja), Oboro's team.",
+        "airDate": "2003-06-04",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41539,
+        "label": "S1 E37",
+        "title": "Surviving the Cut! The Rookie Nine Together Again!",
+        "overview": "The exam is over, but did they truly pass? An old friend arrives to explain and show his concern. Meanwhile, Anko informs the ANBU about Orochimaru, the S-Class criminal who even they cannot stop. Later the Third Hokage explains to everyone what the third exam truly means....",
+        "airDate": "2003-06-11",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41540,
+        "label": "S1 E38",
+        "title": "Narrowing the Field: Sudden Death Elimination!",
+        "overview": "With so many participants still left, the groups are told that they will be pitted against each other in preliminary matches. Kabuto leaves, then Sasuke is told he has to fight. They know that Sasuke was given the cursed seal and if it takes over they will stop him. Can Sasuke stop the seal from taking over again and still win?",
+        "airDate": "2003-06-18",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41541,
+        "label": "S1 E39",
+        "title": "Bushy Brow's Jealousy - Lions Barrage Unleashed!",
+        "overview": "Unable to use his chakra against Akado, Sasuke has to rely on good old-fashioned taijutsu to defeat him. Kakashi senses something is wrong with Sasuke and takes him away after the match.",
+        "airDate": "2003-07-02",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41542,
+        "label": "S1 E40",
+        "title": "Kakashi and Orochimaru: Face-to-Face!",
+        "overview": "While Shino and Zaku finish their fight, Kakashi works on Sasuke's cursed seal. However, someone sinister shows up to ruin things, will Kakashi be able to protect Sasuke from this skilled foe?",
+        "airDate": "2003-07-09",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41543,
+        "label": "S1 E41",
+        "title": "Kunoichi Rumble: The Rivals Get Serious!",
+        "overview": "Kankuro takes on Kabuto's teammate, Misumi, in a quick battle, proving how tough the Sand ninja really are. However, the real match comes when Sakura and Ino are pitted against one another!",
+        "airDate": "2003-07-16",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41544,
+        "label": "S1 E42",
+        "title": "The Ultimate Battle: Cha!",
+        "overview": "Sakura and Ino prepare to settle the score once and for all! However, when Sakura becomes the victim of Ino's Mind-Body Switch Justu, will she be forced to give up the match?",
+        "airDate": "2003-07-23",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41545,
+        "label": "S1 E43",
+        "title": "Killer Kunoichi and a Shaky Shikamaru",
+        "overview": "Temari of the Sand Village battles against Tenten from the Leaf Village. After the battle its Shikamaru's turn, but can he defeat an opponent who has already seen his moves once before?",
+        "airDate": "2003-07-30",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41546,
+        "label": "S1 E44",
+        "title": "Akamaru Unleashed! Who's Top Dog Now?",
+        "overview": "The match between Kiba and Naruto kicks off, with Kiba immediately proving he has the upper hand in the battle. Everyone still believes Naruto is the weak ninja he's always been, everyone except for Hinata, Kakashi, and Sakura. Now it's Naruto's time to shine, and this time...everyone will be watching him!",
+        "airDate": "2003-08-06",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41547,
+        "label": "S1 E45",
+        "title": "Surprise Attack! Naruto's Secret Weapon!",
+        "overview": "The battle between Naruto and Kiba draws to a close, with each of them giving it everything they've got. After being tricked by Naruto, Kiba can no longer rely on Akamaru's help. Naruto decides now is the time to release his new jutsu, only Kiba won't give him time to prepare it!",
+        "airDate": "2003-08-13",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41548,
+        "label": "S1 E46",
+        "title": "Byakugan Battle: Hinata Grows Bold!",
+        "overview": "Kiba alerts Hinata, as he's being taken away, that there are only a few fighters left. He warns her that if she fights Gaara, she has to give up immediately or she could be killed. He also tells her to give up if paired against Neji, because Neji already has issues with her. Just then, the board shows the next fight...Hinata vs. Neji. Just how far will Hinata go to prove herself?",
+        "airDate": "2003-08-20",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41549,
+        "label": "S1 E47",
+        "title": "A Failure Stands Tall!",
+        "overview": "Hinata will not give up so easily, especially with Naruto watching her. Will Hinata be willing to give up her own life in order to prove herself, or will the match be stopped before Neji can connect a killing move?",
+        "airDate": "2003-08-27",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41550,
+        "label": "S1 E48",
+        "title": "Gaara vs. Rock Lee: The Power of Youth Explodes!",
+        "overview": "The second-to-last match finally arrives!  Rock Lee must face down the mysterious and dangerous Gaara, a ninja who is said to have never been truly injured in a fight before.",
+        "airDate": "2003-09-03",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41551,
+        "label": "S1 E49",
+        "title": "Lee's Hidden Strength: Forbidden Secret Jutsu!",
+        "overview": "As the battle between Lee and Gaara continues, Gai remembers how hard Lee used to train and how Lee has pretty much no ninjutsu or genjutsu skills. Lee is also a dropout, like Naruto. In order to defeat Gaara, Lee will have to use the move Gai forbade him to use.",
+        "airDate": "2003-09-10",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41552,
+        "label": "S1 E50",
+        "title": "The Fifth Gate: A Splendid Ninja is Born",
+        "overview": "The match between Gaara and Lee draws to an end as Lee unleashes his ultimate move. But will even this be enough to defeat Gaara? Even if Lee does make it out in one piece, even more shocking news awaits him.",
+        "airDate": "2003-09-17",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41553,
+        "label": "S1 E51",
+        "title": "A Shadow in the Darkness: Danger Approaches Sasuke",
+        "overview": "As Chouji faces off against Dosu, Orochimaru gives an order for Kabuto to abduct Sasuke. He also tells Kabuto that if he wants to stop him, he'll have to kill Sasuke. As Kabuto approaches Sasuke, he hesitates on what to do. His spy cover is soon blown though, as Kakashi appears on the scene. Will Kakashi save Sasuke from Kabuto's grasp?",
+        "airDate": "2003-09-24",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
+    },
+    {
+        "id": 41554,
+        "label": "S1 E52",
+        "title": "Ebisu Returns: Naruto's Toughest Training Yet!",
+        "overview": "Naruto wants Kakashi to train him, but Kakashi has other plans. Ebisu arrives to an unhappy Naruto and makes a deal with him. If Naruto can get away from Ebisu, he'll make Kakashi train him. Naruto decides to accept Ebisu's challenge, but can he win?",
+        "airDate": "2003-10-01",
         "category": "Action",
         "subCategory": "Subbed",
         "embedUrl": "https://vidstream.pro/embed/sample"
