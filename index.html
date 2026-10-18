@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adobe Stock Advanced Tracker</title>
     <style>
-        /* বেসিক ডিজাইন */
+        /* Basic Design */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -56,7 +56,7 @@
             font-size: 15px;
         }
 
-        /* ট্যাব মেনু ডিজাইন */
+        /* Tab Menu Design */
         .tabs {
             display: flex;
             justify-content: center;
@@ -87,7 +87,7 @@
             box-shadow: 0 4px 10px rgba(20, 115, 230, 0.3);
         }
 
-        /* সার্চ বক্স ডিজাইন */
+        /* Search Box Design */
         .search-box {
             display: flex;
             gap: 10px;
@@ -124,7 +124,7 @@
             background-color: #333;
         }
 
-        /* লোডার ও রেজাল্ট */
+        /* Loader & Results */
         .loader {
             display: none;
             margin: 20px 0;
@@ -170,74 +170,74 @@
     <div class="container">
         <span class="logo-badge">Pro Microstock Tool</span>
         <h1>Adobe Stock Advanced Search</h1>
-        <p class="subtitle">Asset ID, Contributor ID অথবা Keywords ব্যবহার করে ডেটা খুঁজুন</p>
+        <p class="subtitle">Search and track data using Asset ID, Contributor ID, or Keywords</p>
 
-        <!-- ট্যাব বাটন -->
+        <!-- Tab Buttons -->
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab('asset', this)">🎨 Asset ID</button>
             <button class="tab-btn" onclick="switchTab('contributor', this)">👤 Contributor</button>
             <button class="tab-btn" onclick="switchTab('keyword', this)">🔍 Keywords</button>
         </div>
 
-        <!-- সার্চ বক্স -->
+        <!-- Search Box -->
         <div class="search-box">
-            <input type="text" id="searchInput" placeholder="যেমন: 543216789 (Asset ID লিখুন)...">
+            <input type="text" id="searchInput" placeholder="e.g., 543216789 (Enter Asset ID)...">
             <button class="search-btn" onclick="performSearch()">Search</button>
         </div>
 
-        <!-- লোডার -->
-        <div class="loader" id="loader">ডেটা খোঁজা হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
+        <!-- Loader -->
+        <div class="loader" id="loader">Searching for data, please wait...</div>
 
-        <!-- রেজাল্ট সেকশন -->
+        <!-- Result Section -->
         <div class="result-section" id="resultSection">
-            <!-- জাভাস্ক্রিপ্ট দিয়ে এখানে রেজাল্ট দেখানো হবে -->
+            <!-- Results will be displayed here via JavaScript -->
         </div>
     </div>
 
     <script>
-        let currentSearchMode = 'asset'; // ডিফল্ট সার্চ মোড
+        let currentSearchMode = 'asset'; // Default search mode
 
-        // ট্যাব পরিবর্তন করার ফাংশন
+        // Function to switch tabs
         function switchTab(mode, element) {
             currentSearchMode = mode;
             
-            // সব বাটন থেকে active ক্লাস রিমুভ করা
+            // Remove 'active' class from all buttons
             let buttons = document.querySelectorAll('.tab-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             
-            // যেটিতে ক্লিক করা হয়েছে সেটিতে active ক্লাস যুক্ত করা
+            // Add 'active' class to the clicked button
             element.classList.add('active');
 
-            // সার্চ বক্সের প্লেসহোল্ডার টেক্সট পরিবর্তন করা
+            // Update placeholder text based on selected mode
             let inputField = document.getElementById('searchInput');
             if(mode === 'asset') {
-                inputField.placeholder = "যেমন: 543216789 (Asset ID লিখুন)...";
+                inputField.placeholder = "e.g., 543216789 (Enter Asset ID)...";
             } else if(mode === 'contributor') {
-                inputField.placeholder = "যেমন: 206412345 (Contributor ID লিখুন)...";
+                inputField.placeholder = "e.g., 206412345 (Enter Contributor ID)...";
             } else if(mode === 'keyword') {
-                inputField.placeholder = "যেমন: minimal vector icon, background...";
+                inputField.placeholder = "e.g., minimal vector icon, background...";
             }
             
-            // রেজাল্ট বক্স ক্লিয়ার করা
+            // Clear result box and input field
             document.getElementById('resultSection').style.display = 'none';
             inputField.value = '';
         }
 
-        // সার্চ বাটনে ক্লিক করলে কী হবে তার ফাংশন
+        // Function to handle the search action
         function performSearch() {
             const input = document.getElementById('searchInput').value.trim();
             const loader = document.getElementById('loader');
             const resultSection = document.getElementById('resultSection');
 
             if (input === "") {
-                alert("অনুগ্রহ করে সার্চ বক্সে কিছু লিখুন!");
+                alert("Please enter something in the search box!");
                 return;
             }
 
             resultSection.style.display = 'none';
             loader.style.display = 'block';
 
-            // ১ সেকেন্ড পর ডেমো রেজাল্ট দেখানো
+            // Show demo result after 1 second
             setTimeout(() => {
                 loader.style.display = 'none';
                 resultSection.style.display = 'block';
@@ -245,11 +245,11 @@
                 let resultHTML = '';
 
                 if(currentSearchMode === 'asset') {
-                    resultHTML = `<div class="demo-alert">Asset ID #${input} এর ডেটা পাওয়া গেছে! (Total Downloads: ${Math.floor(Math.random() * 500)})</div>`;
+                    resultHTML = `<div class="demo-alert">Data found for Asset ID #${input}! (Total Downloads: ${Math.floor(Math.random() * 500)})</div>`;
                 } else if(currentSearchMode === 'contributor') {
-                    resultHTML = `<div class="demo-alert">Contributor #${input} এর পোর্টফোলিও পাওয়া গেছে! (Total Assets: ${Math.floor(Math.random() * 2000)})</div>`;
+                    resultHTML = `<div class="demo-alert">Portfolio found for Contributor #${input}! (Total Assets: ${Math.floor(Math.random() * 2000)})</div>`;
                 } else if(currentSearchMode === 'keyword') {
-                    resultHTML = `<div class="demo-alert">"${input}" কি-ওয়ার্ডের ওপর ভিত্তি করে শীর্ষ ট্রেন্ডিং রেজাল্ট!</div>`;
+                    resultHTML = `<div class="demo-alert">Top trending results for keyword "${input}"!</div>`;
                 }
 
                 resultSection.innerHTML = resultHTML;
