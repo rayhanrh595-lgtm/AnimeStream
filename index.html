@@ -16,17 +16,33 @@
         .tab-btn { background: #f8f9fa; border: 1px solid #ddd; padding: 10px 20px; border-radius: 30px; font-size: 15px; font-weight: 600; color: #555; cursor: pointer; transition: all 0.3s ease; }
         .tab-btn:hover { background: #e9ecef; }
         .tab-btn.active { background: #1473e6; color: white; border-color: #1473e6; box-shadow: 0 4px 10px rgba(20, 115, 230, 0.3); }
-        .search-box { display: flex; gap: 10px; margin-bottom: 25px; }
-        input[type="text"] { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; outline: none; transition: border-color 0.3s; }
-        input[type="text"]:focus { border-color: #1473e6; }
-        .search-btn { background-color: #1a1a1a; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+        
+        /* Search and Date Filter Box */
+        .search-container { background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #eee; }
+        .search-box { display: flex; gap: 10px; margin-bottom: 15px; }
+        input[type="text"] { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; outline: none; transition: border-color 0.3s; }
+        input[type="text"]:focus, input[type="date"]:focus { border-color: #1473e6; }
+        
+        /* Date Filters */
+        .date-filters { display: flex; gap: 15px; justify-content: center; align-items: center; }
+        .date-group { display: flex; align-items: center; gap: 8px; }
+        .date-group label { font-size: 14px; font-weight: 600; color: #555; }
+        input[type="date"] { padding: 10px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; outline: none; color: #333; }
+        
+        .search-btn { background-color: #1a1a1a; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; width: 100%; margin-top: 15px; }
         .search-btn:hover { background-color: #333; }
+        
         .loader { display: none; margin: 20px 0; color: #1473e6; font-weight: 600; }
         .result-section { display: none; margin-top: 25px; border-top: 1px solid #eee; padding-top: 25px; text-align: left; }
         .alert-box { padding: 15px; border-radius: 8px; font-weight: 500; margin-bottom: 20px; line-height: 1.6; }
         .success { background: #e6ffed; color: #1e7e34; border: 1px solid #c3e6cb; }
         .error { background: #ffe6e6; color: #d93025; border: 1px solid #f5c6cb; }
-        @media (max-width: 600px) { .search-box { flex-direction: column; } .tabs { flex-wrap: wrap; } .tab-btn { flex: 1 1 30%; text-align: center; padding: 10px 5px; } }
+        
+        @media (max-width: 600px) { 
+            .search-box, .date-filters { flex-direction: column; align-items: stretch; } 
+            .tabs { flex-wrap: wrap; } 
+            .tab-btn { flex: 1 1 30%; text-align: center; padding: 10px 5px; } 
+        }
     </style>
 </head>
 <body>
@@ -34,7 +50,7 @@
     <div class="container">
         <span class="logo-badge">Pro Microstock Tool</span>
         <h1>Adobe Stock Advanced Search</h1>
-        <p class="subtitle">Search and track data using Asset ID, Contributor ID, or Keywords</p>
+        <p class="subtitle">Track downloads and asset data with custom date filters</p>
 
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab('asset', this)">🎨 Asset ID</button>
@@ -42,18 +58,42 @@
             <button class="tab-btn" onclick="switchTab('keyword', this)">🔍 Keywords</button>
         </div>
 
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="e.g., 543216789 (Enter Asset ID)...">
-            <button class="search-btn" onclick="performSearch()">Search</button>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="e.g., 543216789 (Enter Asset ID)...">
+            </div>
+            
+            <!-- Date Filter Options -->
+            <div class="date-filters">
+                <div class="date-group">
+                    <label for="startDate">From:</label>
+                    <input type="date" id="startDate">
+                </div>
+                <div class="date-group">
+                    <label for="endDate">To:</label>
+                    <input type="date" id="endDate">
+                </div>
+            </div>
+            
+            <button class="search-btn" onclick="performSearch()">Search Data</button>
         </div>
 
         <div class="loader" id="loader">Fetching data from Adobe Stock, please wait...</div>
-
         <div class="result-section" id="resultSection"></div>
     </div>
 
     <script>
         let currentSearchMode = 'asset'; 
+
+        // Set default dates (Last 30 days)
+        window.onload = function() {
+            let today = new Date();
+            let lastMonth = new Date();
+            lastMonth.setDate(today.getDate() - 30);
+            
+            document.getElementById('endDate').valueAsDate = today;
+            document.getElementById('startDate').valueAsDate = lastMonth;
+        };
 
         function switchTab(mode, element) {
             currentSearchMode = mode;
@@ -72,6 +112,8 @@
 
         async function performSearch() {
             const input = document.getElementById('searchInput').value.trim();
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
             const loader = document.getElementById('loader');
             const resultSection = document.getElementById('resultSection');
 
@@ -81,7 +123,7 @@
             }
 
             if (currentSearchMode !== 'asset') {
-                alert("Backend is currently only set up for Asset ID search. Please select 'Asset ID' tab.");
+                alert("Backend is currently only set up for Asset ID search.");
                 return;
             }
 
@@ -89,8 +131,8 @@
             loader.style.display = 'block';
 
             try {
-                // API Call to your Python Backend
-                const response = await fetch(`http://127.0.0.1:5000/api/track/asset/${input}`);
+                // Sending ID along with Start and End Dates to the Python Backend
+                const response = await fetch(`http://127.0.0.1:5000/api/track/asset/${input}?start=${startDate}&end=${endDate}`);
                 const data = await response.json();
 
                 loader.style.display = 'none';
@@ -101,24 +143,21 @@
                         <div class="alert-box success">
                             <h3>🎉 Data Found!</h3><br>
                             <strong>Asset ID:</strong> ${data.asset_id}<br>
-                            <strong>Title:</strong> ${data.title}<br><br>
+                            <strong>Title:</strong> ${data.title}<br>
+                            <strong>Date Range:</strong> ${startDate} to ${endDate}<br><br>
                             <small><em>${data.message}</em></small>
                         </div>
                     `;
                 } else {
                     resultSection.innerHTML = `
-                        <div class="alert-box error">
-                            <strong>Error:</strong> ${data.message}
-                        </div>
+                        <div class="alert-box error"><strong>Error:</strong> ${data.message}</div>
                     `;
                 }
             } catch (error) {
                 loader.style.display = 'none';
                 resultSection.style.display = 'block';
                 resultSection.innerHTML = `
-                    <div class="alert-box error">
-                        <strong>Connection Error:</strong> Make sure your Python API server is running in VS Code!
-                    </div>
+                    <div class="alert-box error"><strong>Connection Error:</strong> Make sure your Python API server is running in VS Code!</div>
                 `;
             }
         }
