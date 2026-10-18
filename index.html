@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Stock Download Tracker</title>
+    <style>
+        /* CSS ডিজাইন অংশ */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 750px;
+            width: 100%;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            text-align: center;
+        }
+
+        .logo-badge {
+            display: inline-block;
+            background: #ffe6e6;
+            color: #ff0000;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 15px;
+        }
+
+        /* সার্চ বক্স ডিজাইন */
+        .search-box {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 14px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #1473e6;
+        }
+
+        button {
+            background-color: #1473e6;
+            color: white;
+            border: none;
+            padding: 14px 26px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #0d5bb5;
+        }
+
+        /* লোডার এবং রেজাল্ট সেকশন */
+        .loader {
+            display: none;
+            margin: 20px 0;
+            color: #1473e6;
+            font-weight: 600;
+        }
+
+        .result-section {
+            display: none;
+            margin-top: 25px;
+            border-top: 1px solid #eee;
+            padding-top: 25px;
+            text-align: left;
+        }
+
+        .asset-card {
+            display: flex;
+            gap: 20px;
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #eaeaea;
+            align-items: center;
+        }
+
+        .asset-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .asset-details {
+            flex: 1;
+        }
+
+        .asset-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .stat-box {
+            background: #ffffff;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .stat-label {
+            font-size: 12px;
+            color: #777;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1473e6;
+            margin-top: 4px;
+        }
+
+        @media (max-width: 550px) {
+            .search-box {
+                flex-direction: column;
+            }
+            .asset-card {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="logo-badge">Microstock Tool</span>
+        <h1>Adobe Stock Tracker</h1>
+        <p class="subtitle">যেকোনো ফাইল বা ভেক্টর আইকনের Asset ID দিয়ে ডাউনলোড এবং র‍্যাঙ্ক চেক করুন</p>
+
+        <!-- সার্চ বক্স -->
+        <div class="search-box">
+            <input type="text" id="assetInput" placeholder="যেমন: 543216789 (Asset ID লিখুন)...">
+            <button onclick="trackAsset()">Check Data</button>
+        </div>
+
+        <!-- লোডিং মেসেজ -->
+        <div class="loader" id="loader">ডেটা খোঁজা হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
+
+        <!-- রেজাল্ট দেখানোর জায়গা -->
+        <div class="result-section" id="resultSection">
+            <div class="asset-card">
+                <img src="https://via.placeholder.com/150/f0f4f8/1473e6?text=Vector+Icon" alt="Asset Preview" class="asset-img" id="assetImage">
+                <div class="asset-details">
+                    <div class="asset-title" id="assetTitle">Minimal Line Art UI Icon Pack - Vector Illustration</div>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-label">Total Downloads</div>
+                            <div class="stat-value" id="downloadCount">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Asset ID</div>
+                            <div class="stat-value" id="displayId">#000000</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Category</div>
+                            <div class="stat-value" style="font-size: 15px; color: #333;">Vectors / Icons</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-label">Status</div>
+                            <div class="stat-value" style="font-size: 15px; color: #28a745;">Active</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ডেমো জাভাস্ক্রিপ্ট ফাংশন (টেস্টিংয়ের জন্য)
+        function trackAsset() {
+            const input = document.getElementById('assetInput').value.trim();
+            const loader = document.getElementById('loader');
+            const resultSection = document.getElementById('resultSection');
+
+            if (input === "") {
+                alert("অনুগ্রহ করে একটি Asset ID বা লিংক দিন!");
+                return;
+            }
+
+            // আগের রেজাল্ট লুকিয়ে লোডার দেখানো
+            resultSection.style.display = 'none';
+            loader.style.display = 'block';
+
+            // ১ সেকেন্ড পর ডেমো রেজাল্ট দেখানো (পরে এখানে আসল API যুক্ত হবে)
+            setTimeout(() => {
+                loader.style.display = 'none';
+                resultSection.style.display = 'block';
+
+                // ইউজার যে আইডি দিয়েছে তা দেখানো এবং একটি র‍্যান্ডম ডাউনলোড সংখ্যা দেখানো
+                document.getElementById('displayId').innerText = "#" + input.slice(0, 10);
+                const randomDownloads = Math.floor(Math.random() * 450) + 15;
+                document.getElementById('downloadCount').innerText = randomDownloads + " Downloads";
+            }, 1000);
+        }
+    </script>
+
+</body>
+</html>
