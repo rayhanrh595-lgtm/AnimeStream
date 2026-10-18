@@ -63,3 +63,14 @@ searchInput.addEventListener("input", (e) => {
 
 // পেজ লোড হলে ডাটা ফেচ হবে
 fetchAnimeData();
+
+card.addEventListener("click", () => {
+    currentTitleEl.innerText = anime.title;
+    // যদি আইফ্রেম ব্লক খায়, তবে সাথে একটি সরাসরি লিংক বা বাটন দেখানোর ব্যবস্থা
+    videoContainerEl.innerHTML = `
+        <iframe src="${anime.embedUrl}" allowfullscreen></iframe>
+        <div style="margin-top: 10px; text-align: center;">
+            <a href="${anime.embedUrl}" target="_blank" style="color: #fff; background: #e50914; padding: 8px 15px; text-decoration: none; border-radius: 4px; display: inline-block;">Open Video in New Tab</a>
+        </div>
+    `;
+});
