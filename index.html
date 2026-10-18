@@ -3,162 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adobe Stock Advanced Tracker</title>
+    <title>Adobe Stock Global Explorer</title>
     <style>
-        /* Basic Design */
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f0f4f8; color: #333; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 40px 20px; }
-        .container { background: #ffffff; max-width: 800px; width: 100%; padding: 35px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
-        .logo-badge { display: inline-block; background: #e6f0ff; color: #1473e6; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 15px; }
+        body { background-color: #f4f7f6; color: #333; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 40px 20px; }
+        .container { background: #ffffff; max-width: 850px; width: 100%; padding: 35px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
+        .logo-badge { display: inline-block; background: #1a1a1a; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 15px; }
         h1 { color: #1a1a1a; font-size: 28px; margin-bottom: 10px; }
         p.subtitle { color: #666; margin-bottom: 30px; font-size: 15px; }
-        .tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
-        .tab-btn { background: #f8f9fa; border: 1px solid #ddd; padding: 10px 20px; border-radius: 30px; font-size: 15px; font-weight: 600; color: #555; cursor: pointer; transition: all 0.3s ease; }
-        .tab-btn:hover { background: #e9ecef; }
-        .tab-btn.active { background: #1473e6; color: white; border-color: #1473e6; box-shadow: 0 4px 10px rgba(20, 115, 230, 0.3); }
         
-        /* Search and Date Filter Box */
-        .search-container { background: #f8f9fa; padding: 20px; border-radius: 12px; margin-bottom: 25px; border: 1px solid #eee; }
-        .search-box { display: flex; gap: 10px; margin-bottom: 15px; }
-        input[type="text"] { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 16px; outline: none; transition: border-color 0.3s; }
-        input[type="text"]:focus, input[type="date"]:focus { border-color: #1473e6; }
-        
-        /* Date Filters */
-        .date-filters { display: flex; gap: 15px; justify-content: center; align-items: center; }
-        .date-group { display: flex; align-items: center; gap: 8px; }
-        .date-group label { font-size: 14px; font-weight: 600; color: #555; }
-        input[type="date"] { padding: 10px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 14px; outline: none; color: #333; }
-        
-        .search-btn { background-color: #1a1a1a; color: white; border: none; padding: 15px 30px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; width: 100%; margin-top: 15px; }
-        .search-btn:hover { background-color: #333; }
+        .search-box { display: flex; gap: 10px; margin-bottom: 25px; }
+        input[type="text"] { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; outline: none; transition: 0.3s; }
+        input[type="text"]:focus { border-color: #1473e6; }
+        .search-btn { background-color: #1473e6; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
+        .search-btn:hover { background-color: #0d5bb5; }
         
         .loader { display: none; margin: 20px 0; color: #1473e6; font-weight: 600; }
-        .result-section { display: none; margin-top: 25px; border-top: 1px solid #eee; padding-top: 25px; text-align: left; }
-        .alert-box { padding: 15px; border-radius: 8px; font-weight: 500; margin-bottom: 20px; line-height: 1.6; }
-        .success { background: #e6ffed; color: #1e7e34; border: 1px solid #c3e6cb; }
-        .error { background: #ffe6e6; color: #d93025; border: 1px solid #f5c6cb; }
         
-        @media (max-width: 600px) { 
-            .search-box, .date-filters { flex-direction: column; align-items: stretch; } 
-            .tabs { flex-wrap: wrap; } 
-            .tab-btn { flex: 1 1 30%; text-align: center; padding: 10px 5px; } 
-        }
+        /* Premium Result Card Design */
+        .result-card { display: none; margin-top: 25px; text-align: left; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .result-image { width: 100%; max-height: 400px; object-fit: contain; background: #f8f9fa; border-bottom: 1px solid #eee; }
+        .result-info { padding: 25px; }
+        .result-info h3 { margin-bottom: 15px; color: #1a1a1a; font-size: 22px; line-height: 1.4; }
+        
+        .stats-grid { display: flex; gap: 15px; margin-bottom: 20px; }
+        .stat-box { background: #f0f7ff; border: 1px solid #cce0ff; padding: 15px; border-radius: 8px; flex: 1; text-align: center; }
+        .stat-box.downloads { background: #e6ffed; border-color: #c3e6cb; }
+        .stat-box h4 { font-size: 24px; color: #1a1a1a; margin-bottom: 5px; }
+        .stat-box p { font-size: 13px; color: #555; font-weight: 600; text-transform: uppercase; }
+        
+        .keywords-section { margin-top: 20px; }
+        .keywords-section h4 { font-size: 15px; margin-bottom: 10px; color: #444; }
+        .keyword-tag { display: inline-block; background: #f1f3f5; padding: 6px 12px; border-radius: 20px; font-size: 13px; color: #555; margin-right: 8px; margin-bottom: 8px; border: 1px solid #ddd; }
+        
+        .error-box { display: none; padding: 15px; background: #ffe6e6; color: #d93025; border: 1px solid #f5c6cb; border-radius: 8px; margin-top: 20px; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <span class="logo-badge">Pro Microstock Tool</span>
-        <h1>Adobe Stock Advanced Search</h1>
-        <p class="subtitle">Track downloads and asset data with custom date filters</p>
+        <span class="logo-badge">Advanced Extractor Tool</span>
+        <h1>Adobe Stock Global Explorer</h1>
+        <p class="subtitle">Extract exact downloads, views, and hidden keywords using Asset ID</p>
 
-        <div class="tabs">
-            <button class="tab-btn active" onclick="switchTab('asset', this)">🎨 Asset ID</button>
-            <button class="tab-btn" onclick="switchTab('contributor', this)">👤 Contributor</button>
-            <button class="tab-btn" onclick="switchTab('keyword', this)">🔍 Keywords</button>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="e.g., 2109960558">
+            <button class="search-btn" onclick="performSearch()">Extract Data</button>
         </div>
 
-        <div class="search-container">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="e.g., 543216789 (Enter Asset ID)...">
-            </div>
-            
-            <!-- Date Filter Options -->
-            <div class="date-filters">
-                <div class="date-group">
-                    <label for="startDate">From:</label>
-                    <input type="date" id="startDate">
-                </div>
-                <div class="date-group">
-                    <label for="endDate">To:</label>
-                    <input type="date" id="endDate">
-                </div>
-            </div>
-            
-            <button class="search-btn" onclick="performSearch()">Search Data</button>
-        </div>
+        <div class="loader" id="loader">Extracting hidden JSON payload... please wait.</div>
+        <div class="error-box" id="errorBox"></div>
 
-        <div class="loader" id="loader">Fetching data from Adobe Stock, please wait...</div>
-        <div class="result-section" id="resultSection"></div>
+        <div class="result-card" id="resultCard">
+            <img id="resImage" class="result-image" src="" alt="Asset Preview">
+            
+            <div class="result-info">
+                <div style="margin-bottom: 10px; font-size: 14px; color: #666;"><strong>Asset ID:</strong> <span id="resId"></span></div>
+                <h3 id="resTitle"></h3>
+                
+                <div class="stats-grid">
+                    <div class="stat-box downloads">
+                        <h4 id="resDownloads">0</h4>
+                        <p>Downloads</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4 id="resViews">0</h4>
+                        <p>Views</p>
+                    </div>
+                </div>
+
+                <div class="keywords-section">
+                    <h4>Top Keywords:</h4>
+                    <div id="resKeywords"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
-        let currentSearchMode = 'asset'; 
-
-        // Set default dates (Last 30 days)
-        window.onload = function() {
-            let today = new Date();
-            let lastMonth = new Date();
-            lastMonth.setDate(today.getDate() - 30);
-            
-            document.getElementById('endDate').valueAsDate = today;
-            document.getElementById('startDate').valueAsDate = lastMonth;
-        };
-
-        function switchTab(mode, element) {
-            currentSearchMode = mode;
-            let buttons = document.querySelectorAll('.tab-btn');
-            buttons.forEach(btn => btn.classList.remove('active'));
-            element.classList.add('active');
-
-            let inputField = document.getElementById('searchInput');
-            if(mode === 'asset') { inputField.placeholder = "e.g., 543216789 (Enter Asset ID)..."; } 
-            else if(mode === 'contributor') { inputField.placeholder = "e.g., 206412345 (Enter Contributor ID)..."; } 
-            else if(mode === 'keyword') { inputField.placeholder = "e.g., minimal vector icon, background..."; }
-            
-            document.getElementById('resultSection').style.display = 'none';
-            inputField.value = '';
-        }
-
         async function performSearch() {
             const input = document.getElementById('searchInput').value.trim();
-            const startDate = document.getElementById('startDate').value;
-            const endDate = document.getElementById('endDate').value;
             const loader = document.getElementById('loader');
-            const resultSection = document.getElementById('resultSection');
+            const resultCard = document.getElementById('resultCard');
+            const errorBox = document.getElementById('errorBox');
 
-            if (input === "") {
-                alert("Please enter something in the search box!");
-                return;
-            }
+            if (input === "") { alert("Please enter an Asset ID!"); return; }
 
-            if (currentSearchMode !== 'asset') {
-                alert("Backend is currently only set up for Asset ID search.");
-                return;
-            }
-
-            resultSection.style.display = 'none';
+            resultCard.style.display = 'none';
+            errorBox.style.display = 'none';
             loader.style.display = 'block';
 
             try {
-                // Sending ID along with Start and End Dates to the Python Backend
-                const response = await fetch(`http://127.0.0.1:5000/api/track/asset/${input}?start=${startDate}&end=${endDate}`);
+                const response = await fetch(`http://127.0.0.1:5000/api/track/asset/${input}`);
                 const data = await response.json();
 
                 loader.style.display = 'none';
-                resultSection.style.display = 'block';
 
                 if (data.status === "success") {
-                    resultSection.innerHTML = `
-                        <div class="alert-box success">
-                            <h3>🎉 Data Found!</h3><br>
-                            <strong>Asset ID:</strong> ${data.asset_id}<br>
-                            <strong>Title:</strong> ${data.title}<br>
-                            <strong>Date Range:</strong> ${startDate} to ${endDate}<br><br>
-                            <small><em>${data.message}</em></small>
-                        </div>
-                    `;
+                    document.getElementById('resId').innerText = data.asset_id;
+                    document.getElementById('resTitle').innerText = data.title;
+                    document.getElementById('resDownloads').innerText = data.downloads !== "Hidden" ? data.downloads : "N/A";
+                    document.getElementById('resViews').innerText = data.views !== "Hidden" ? data.views : "N/A";
+                    
+                    const imgElement = document.getElementById('resImage');
+                    if(data.image_url) {
+                        imgElement.src = data.image_url;
+                        imgElement.style.display = 'block';
+                    } else {
+                        imgElement.style.display = 'none';
+                    }
+
+                    // Populate Keywords
+                    const kwContainer = document.getElementById('resKeywords');
+                    kwContainer.innerHTML = '';
+                    if(data.keywords && data.keywords.length > 0) {
+                        data.keywords.forEach(kw => {
+                            const span = document.createElement('span');
+                            span.className = 'keyword-tag';
+                            span.innerText = kw;
+                            kwContainer.appendChild(span);
+                        });
+                    } else {
+                        kwContainer.innerHTML = '<span style="color:#888; font-size:13px;">No keywords found</span>';
+                    }
+                    
+                    resultCard.style.display = 'block';
                 } else {
-                    resultSection.innerHTML = `
-                        <div class="alert-box error"><strong>Error:</strong> ${data.message}</div>
-                    `;
+                    errorBox.innerText = "Error: " + data.message;
+                    errorBox.style.display = 'block';
                 }
             } catch (error) {
                 loader.style.display = 'none';
-                resultSection.style.display = 'block';
-                resultSection.innerHTML = `
-                    <div class="alert-box error"><strong>Connection Error:</strong> Make sure your Python API server is running in VS Code!</div>
-                `;
+                errorBox.innerText = "Connection Error: Backend server is not running.";
+                errorBox.style.display = 'block';
             }
         }
     </script>
