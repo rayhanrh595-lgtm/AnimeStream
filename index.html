@@ -6,163 +6,27 @@
     <title>Adobe Stock Advanced Tracker</title>
     <style>
         /* Basic Design */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f0f4f8;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 40px 20px;
-        }
-
-        .container {
-            background: #ffffff;
-            max-width: 800px;
-            width: 100%;
-            padding: 35px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .logo-badge {
-            display: inline-block;
-            background: #e6f0ff;
-            color: #1473e6;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        h1 {
-            color: #1a1a1a;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-
-        p.subtitle {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 15px;
-        }
-
-        /* Tab Menu Design */
-        .tabs {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .tab-btn {
-            background: #f8f9fa;
-            border: 1px solid #ddd;
-            padding: 10px 20px;
-            border-radius: 30px;
-            font-size: 15px;
-            font-weight: 600;
-            color: #555;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .tab-btn:hover {
-            background: #e9ecef;
-        }
-
-        .tab-btn.active {
-            background: #1473e6;
-            color: white;
-            border-color: #1473e6;
-            box-shadow: 0 4px 10px rgba(20, 115, 230, 0.3);
-        }
-
-        /* Search Box Design */
-        .search-box {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-
-        input[type="text"] {
-            flex: 1;
-            padding: 15px 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            font-size: 16px;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-
-        input[type="text"]:focus {
-            border-color: #1473e6;
-        }
-
-        .search-btn {
-            background-color: #1a1a1a;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        .search-btn:hover {
-            background-color: #333;
-        }
-
-        /* Loader & Results */
-        .loader {
-            display: none;
-            margin: 20px 0;
-            color: #1473e6;
-            font-weight: 600;
-        }
-
-        .result-section {
-            display: none;
-            margin-top: 25px;
-            border-top: 1px solid #eee;
-            padding-top: 25px;
-            text-align: left;
-        }
-
-        .demo-alert {
-            background: #e6f0ff;
-            color: #0056b3;
-            padding: 15px;
-            border-radius: 8px;
-            font-weight: 600;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        @media (max-width: 600px) {
-            .search-box {
-                flex-direction: column;
-            }
-            .tabs {
-                flex-wrap: wrap;
-            }
-            .tab-btn {
-                flex: 1 1 30%;
-                text-align: center;
-                padding: 10px 5px;
-            }
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f0f4f8; color: #333; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 40px 20px; }
+        .container { background: #ffffff; max-width: 800px; width: 100%; padding: 35px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
+        .logo-badge { display: inline-block; background: #e6f0ff; color: #1473e6; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 15px; }
+        h1 { color: #1a1a1a; font-size: 28px; margin-bottom: 10px; }
+        p.subtitle { color: #666; margin-bottom: 30px; font-size: 15px; }
+        .tabs { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; }
+        .tab-btn { background: #f8f9fa; border: 1px solid #ddd; padding: 10px 20px; border-radius: 30px; font-size: 15px; font-weight: 600; color: #555; cursor: pointer; transition: all 0.3s ease; }
+        .tab-btn:hover { background: #e9ecef; }
+        .tab-btn.active { background: #1473e6; color: white; border-color: #1473e6; box-shadow: 0 4px 10px rgba(20, 115, 230, 0.3); }
+        .search-box { display: flex; gap: 10px; margin-bottom: 25px; }
+        input[type="text"] { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; outline: none; transition: border-color 0.3s; }
+        input[type="text"]:focus { border-color: #1473e6; }
+        .search-btn { background-color: #1a1a1a; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
+        .search-btn:hover { background-color: #333; }
+        .loader { display: none; margin: 20px 0; color: #1473e6; font-weight: 600; }
+        .result-section { display: none; margin-top: 25px; border-top: 1px solid #eee; padding-top: 25px; text-align: left; }
+        .alert-box { padding: 15px; border-radius: 8px; font-weight: 500; margin-bottom: 20px; line-height: 1.6; }
+        .success { background: #e6ffed; color: #1e7e34; border: 1px solid #c3e6cb; }
+        .error { background: #ffe6e6; color: #d93025; border: 1px solid #f5c6cb; }
+        @media (max-width: 600px) { .search-box { flex-direction: column; } .tabs { flex-wrap: wrap; } .tab-btn { flex: 1 1 30%; text-align: center; padding: 10px 5px; } }
     </style>
 </head>
 <body>
@@ -172,59 +36,41 @@
         <h1>Adobe Stock Advanced Search</h1>
         <p class="subtitle">Search and track data using Asset ID, Contributor ID, or Keywords</p>
 
-        <!-- Tab Buttons -->
         <div class="tabs">
             <button class="tab-btn active" onclick="switchTab('asset', this)">🎨 Asset ID</button>
             <button class="tab-btn" onclick="switchTab('contributor', this)">👤 Contributor</button>
             <button class="tab-btn" onclick="switchTab('keyword', this)">🔍 Keywords</button>
         </div>
 
-        <!-- Search Box -->
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="e.g., 543216789 (Enter Asset ID)...">
             <button class="search-btn" onclick="performSearch()">Search</button>
         </div>
 
-        <!-- Loader -->
-        <div class="loader" id="loader">Searching for data, please wait...</div>
+        <div class="loader" id="loader">Fetching data from Adobe Stock, please wait...</div>
 
-        <!-- Result Section -->
-        <div class="result-section" id="resultSection">
-            <!-- Results will be displayed here via JavaScript -->
-        </div>
+        <div class="result-section" id="resultSection"></div>
     </div>
 
     <script>
-        let currentSearchMode = 'asset'; // Default search mode
+        let currentSearchMode = 'asset'; 
 
-        // Function to switch tabs
         function switchTab(mode, element) {
             currentSearchMode = mode;
-            
-            // Remove 'active' class from all buttons
             let buttons = document.querySelectorAll('.tab-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add 'active' class to the clicked button
             element.classList.add('active');
 
-            // Update placeholder text based on selected mode
             let inputField = document.getElementById('searchInput');
-            if(mode === 'asset') {
-                inputField.placeholder = "e.g., 543216789 (Enter Asset ID)...";
-            } else if(mode === 'contributor') {
-                inputField.placeholder = "e.g., 206412345 (Enter Contributor ID)...";
-            } else if(mode === 'keyword') {
-                inputField.placeholder = "e.g., minimal vector icon, background...";
-            }
+            if(mode === 'asset') { inputField.placeholder = "e.g., 543216789 (Enter Asset ID)..."; } 
+            else if(mode === 'contributor') { inputField.placeholder = "e.g., 206412345 (Enter Contributor ID)..."; } 
+            else if(mode === 'keyword') { inputField.placeholder = "e.g., minimal vector icon, background..."; }
             
-            // Clear result box and input field
             document.getElementById('resultSection').style.display = 'none';
             inputField.value = '';
         }
 
-        // Function to handle the search action
-        function performSearch() {
+        async function performSearch() {
             const input = document.getElementById('searchInput').value.trim();
             const loader = document.getElementById('loader');
             const resultSection = document.getElementById('resultSection');
@@ -234,26 +80,47 @@
                 return;
             }
 
+            if (currentSearchMode !== 'asset') {
+                alert("Backend is currently only set up for Asset ID search. Please select 'Asset ID' tab.");
+                return;
+            }
+
             resultSection.style.display = 'none';
             loader.style.display = 'block';
 
-            // Show demo result after 1 second
-            setTimeout(() => {
+            try {
+                // API Call to your Python Backend
+                const response = await fetch(`http://127.0.0.1:5000/api/track/asset/${input}`);
+                const data = await response.json();
+
                 loader.style.display = 'none';
                 resultSection.style.display = 'block';
 
-                let resultHTML = '';
-
-                if(currentSearchMode === 'asset') {
-                    resultHTML = `<div class="demo-alert">Data found for Asset ID #${input}! (Total Downloads: ${Math.floor(Math.random() * 500)})</div>`;
-                } else if(currentSearchMode === 'contributor') {
-                    resultHTML = `<div class="demo-alert">Portfolio found for Contributor #${input}! (Total Assets: ${Math.floor(Math.random() * 2000)})</div>`;
-                } else if(currentSearchMode === 'keyword') {
-                    resultHTML = `<div class="demo-alert">Top trending results for keyword "${input}"!</div>`;
+                if (data.status === "success") {
+                    resultSection.innerHTML = `
+                        <div class="alert-box success">
+                            <h3>🎉 Data Found!</h3><br>
+                            <strong>Asset ID:</strong> ${data.asset_id}<br>
+                            <strong>Title:</strong> ${data.title}<br><br>
+                            <small><em>${data.message}</em></small>
+                        </div>
+                    `;
+                } else {
+                    resultSection.innerHTML = `
+                        <div class="alert-box error">
+                            <strong>Error:</strong> ${data.message}
+                        </div>
+                    `;
                 }
-
-                resultSection.innerHTML = resultHTML;
-            }, 1000);
+            } catch (error) {
+                loader.style.display = 'none';
+                resultSection.style.display = 'block';
+                resultSection.innerHTML = `
+                    <div class="alert-box error">
+                        <strong>Connection Error:</strong> Make sure your Python API server is running in VS Code!
+                    </div>
+                `;
+            }
         }
     </script>
 
