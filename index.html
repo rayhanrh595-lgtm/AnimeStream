@@ -3,142 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adobe Stock Global Explorer</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #f4f7f6; color: #333; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 40px 20px; }
-        .container { background: #ffffff; max-width: 850px; width: 100%; padding: 35px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; }
-        .logo-badge { display: inline-block; background: #1a1a1a; color: #fff; padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: bold; margin-bottom: 15px; }
-        h1 { color: #1a1a1a; font-size: 28px; margin-bottom: 10px; }
-        p.subtitle { color: #666; margin-bottom: 30px; font-size: 15px; }
-        
-        .search-box { display: flex; gap: 10px; margin-bottom: 25px; }
-        input[type="text"] { flex: 1; padding: 15px 20px; border: 2px solid #e0e0e0; border-radius: 10px; font-size: 16px; outline: none; transition: 0.3s; }
-        input[type="text"]:focus { border-color: #1473e6; }
-        .search-btn { background-color: #1473e6; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.3s; }
-        .search-btn:hover { background-color: #0d5bb5; }
-        
-        .loader { display: none; margin: 20px 0; color: #1473e6; font-weight: 600; }
-        
-        /* Premium Result Card Design */
-        .result-card { display: none; margin-top: 25px; text-align: left; border: 1px solid #eee; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .result-image { width: 100%; max-height: 400px; object-fit: contain; background: #f8f9fa; border-bottom: 1px solid #eee; }
-        .result-info { padding: 25px; }
-        .result-info h3 { margin-bottom: 15px; color: #1a1a1a; font-size: 22px; line-height: 1.4; }
-        
-        .stats-grid { display: flex; gap: 15px; margin-bottom: 20px; }
-        .stat-box { background: #f0f7ff; border: 1px solid #cce0ff; padding: 15px; border-radius: 8px; flex: 1; text-align: center; }
-        .stat-box.downloads { background: #e6ffed; border-color: #c3e6cb; }
-        .stat-box h4 { font-size: 24px; color: #1a1a1a; margin-bottom: 5px; }
-        .stat-box p { font-size: 13px; color: #555; font-weight: 600; text-transform: uppercase; }
-        
-        .keywords-section { margin-top: 20px; }
-        .keywords-section h4 { font-size: 15px; margin-bottom: 10px; color: #444; }
-        .keyword-tag { display: inline-block; background: #f1f3f5; padding: 6px 12px; border-radius: 20px; font-size: 13px; color: #555; margin-right: 8px; margin-bottom: 8px; border: 1px solid #ddd; }
-        
-        .error-box { display: none; padding: 15px; background: #ffe6e6; color: #d93025; border: 1px solid #f5c6cb; border-radius: 8px; margin-top: 20px; }
-    </style>
+    <title>Anime Stream Site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <span class="logo-badge">Advanced Extractor Tool</span>
-        <h1>Adobe Stock Global Explorer</h1>
-        <p class="subtitle">Extract exact downloads, views, and hidden keywords using Asset ID</p>
+    <!-- হেডার বা লোগো সেকশন -->
+    <header>
+        <h1>My Anime Stream</h1>
+        <input type="text" id="searchInput" placeholder="Search anime...">
+    </header>
 
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="e.g., 2109960558">
-            <button class="search-btn" onclick="performSearch()">Extract Data</button>
+    <!-- মেইন কন্টেন্ট: অ্যানিমে লিস্ট ও ভিডিও প্লেয়ার -->
+    <main class="container">
+        <!-- অ্যানিমে কার্টুন বা লিস্ট সেকশন -->
+        <div class="anime-list" id="animeList">
+            <!-- জাভাস্ক্রিপ্ট দিয়ে এখানে অ্যানিমে কার্ডগুলো অটো আসবে -->
         </div>
 
-        <div class="loader" id="loader">Extracting hidden JSON payload... please wait.</div>
-        <div class="error-box" id="errorBox"></div>
-
-        <div class="result-card" id="resultCard">
-            <img id="resImage" class="result-image" src="" alt="Asset Preview">
-            
-            <div class="result-info">
-                <div style="margin-bottom: 10px; font-size: 14px; color: #666;"><strong>Asset ID:</strong> <span id="resId"></span></div>
-                <h3 id="resTitle"></h3>
-                
-                <div class="stats-grid">
-                    <div class="stat-box downloads">
-                        <h4 id="resDownloads">0</h4>
-                        <p>Downloads</p>
-                    </div>
-                    <div class="stat-box">
-                        <h4 id="resViews">0</h4>
-                        <p>Views</p>
-                    </div>
-                </div>
-
-                <div class="keywords-section">
-                    <h4>Top Keywords:</h4>
-                    <div id="resKeywords"></div>
-                </div>
+        <!-- ভিডিও প্লেয়ার সেকশন -->
+        <div class="player-section">
+            <h2 id="currentTitle">Select an Anime to Watch</h2>
+            <div class="video-container" id="videoContainer">
+                <p>No video selected</p>
             </div>
         </div>
-    </div>
+    </main>
 
-    <script>
-        async function performSearch() {
-            const input = document.getElementById('searchInput').value.trim();
-            const loader = document.getElementById('loader');
-            const resultCard = document.getElementById('resultCard');
-            const errorBox = document.getElementById('errorBox');
-
-            if (input === "") { alert("Please enter an Asset ID!"); return; }
-
-            resultCard.style.display = 'none';
-            errorBox.style.display = 'none';
-            loader.style.display = 'block';
-
-            try {
-                const response = await fetch(`http://127.0.0.1:5000/api/track/asset/${input}`);
-                const data = await response.json();
-
-                loader.style.display = 'none';
-
-                if (data.status === "success") {
-                    document.getElementById('resId').innerText = data.asset_id;
-                    document.getElementById('resTitle').innerText = data.title;
-                    document.getElementById('resDownloads').innerText = data.downloads !== "Hidden" ? data.downloads : "N/A";
-                    document.getElementById('resViews').innerText = data.views !== "Hidden" ? data.views : "N/A";
-                    
-                    const imgElement = document.getElementById('resImage');
-                    if(data.image_url) {
-                        imgElement.src = data.image_url;
-                        imgElement.style.display = 'block';
-                    } else {
-                        imgElement.style.display = 'none';
-                    }
-
-                    // Populate Keywords
-                    const kwContainer = document.getElementById('resKeywords');
-                    kwContainer.innerHTML = '';
-                    if(data.keywords && data.keywords.length > 0) {
-                        data.keywords.forEach(kw => {
-                            const span = document.createElement('span');
-                            span.className = 'keyword-tag';
-                            span.innerText = kw;
-                            kwContainer.appendChild(span);
-                        });
-                    } else {
-                        kwContainer.innerHTML = '<span style="color:#888; font-size:13px;">No keywords found</span>';
-                    }
-                    
-                    resultCard.style.display = 'block';
-                } else {
-                    errorBox.innerText = "Error: " + data.message;
-                    errorBox.style.display = 'block';
-                }
-            } catch (error) {
-                loader.style.display = 'none';
-                errorBox.innerText = "Connection Error: Backend server is not running.";
-                errorBox.style.display = 'block';
-            }
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
