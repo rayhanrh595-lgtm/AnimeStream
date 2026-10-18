@@ -33,5 +33,12 @@
         "category": "Action",
         "subCategory": "Subbed",
         "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        "id": 1,
+        "title": "Sample Scraped Anime",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://vidstream.pro/embed/sample"
     }
 ]
