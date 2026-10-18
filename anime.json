@@ -1,23 +1,37 @@
 [
-  {
-    "id": 1,
-    "title": "Naruto - Episode 1",
-    "category": "Action",
-    "subCategory": "Subbed",
-    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    "id": 2,
-    "title": "Attack on Titan - Season 1 Ep 1",
-    "category": "Action",
-    "subCategory": "Dubbed",
-    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    "id": 3,
-    "title": "Your Lie in April - Episode 1",
-    "category": "Romance",
-    "subCategory": "Subbed",
-    "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  }
+    {
+        "id": 1,
+        "title": "Naruto - Episode 1",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        "id": 2,
+        "title": "Attack on Titan - Season 1 Ep 1",
+        "category": "Action",
+        "subCategory": "Dubbed",
+        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        "id": 3,
+        "title": "Your Lie in April - Episode 1",
+        "category": "Romance",
+        "subCategory": "Subbed",
+        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        "id": 4,
+        "title": "One Piece - Episode 1",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    },
+    {
+        "id": 4,
+        "title": "One Piece - Episode 1",
+        "category": "Action",
+        "subCategory": "Subbed",
+        "embedUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    }
 ]
