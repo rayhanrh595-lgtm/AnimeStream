@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adobe Stock Download Tracker</title>
+    <title>Adobe Stock Advanced Tracker</title>
     <style>
-        /* CSS ডিজাইন অংশ */
+        /* বেসিক ডিজাইন */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #f4f6f9;
+            background-color: #f0f4f8;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -25,23 +25,23 @@
 
         .container {
             background: #ffffff;
-            max-width: 750px;
+            max-width: 800px;
             width: 100%;
             padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
             text-align: center;
         }
 
         .logo-badge {
             display: inline-block;
-            background: #ffe6e6;
-            color: #ff0000;
-            padding: 6px 14px;
+            background: #e6f0ff;
+            color: #1473e6;
+            padding: 6px 16px;
             border-radius: 20px;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: bold;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
         }
 
         h1 {
@@ -52,8 +52,39 @@
 
         p.subtitle {
             color: #666;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-size: 15px;
+        }
+
+        /* ট্যাব মেনু ডিজাইন */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab-btn {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #555;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background: #e9ecef;
+        }
+
+        .tab-btn.active {
+            background: #1473e6;
+            color: white;
+            border-color: #1473e6;
+            box-shadow: 0 4px 10px rgba(20, 115, 230, 0.3);
         }
 
         /* সার্চ বক্স ডিজাইন */
@@ -65,9 +96,9 @@
 
         input[type="text"] {
             flex: 1;
-            padding: 14px 18px;
+            padding: 15px 20px;
             border: 2px solid #e0e0e0;
-            border-radius: 8px;
+            border-radius: 10px;
             font-size: 16px;
             outline: none;
             transition: border-color 0.3s;
@@ -77,23 +108,23 @@
             border-color: #1473e6;
         }
 
-        button {
-            background-color: #1473e6;
+        .search-btn {
+            background-color: #1a1a1a;
             color: white;
             border: none;
-            padding: 14px 26px;
-            border-radius: 8px;
+            padding: 15px 30px;
+            border-radius: 10px;
             font-size: 16px;
-            font-weight: 600;
+            font-weight: bold;
             cursor: pointer;
             transition: background 0.3s;
         }
 
-        button:hover {
-            background-color: #0d5bb5;
+        .search-btn:hover {
+            background-color: #333;
         }
 
-        /* লোডার এবং রেজাল্ট সেকশন */
+        /* লোডার ও রেজাল্ট */
         .loader {
             display: none;
             margin: 20px 0;
@@ -109,71 +140,27 @@
             text-align: left;
         }
 
-        .asset-card {
-            display: flex;
-            gap: 20px;
-            background: #fafafa;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #eaeaea;
-            align-items: center;
-        }
-
-        .asset-img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
+        .demo-alert {
+            background: #e6f0ff;
+            color: #0056b3;
+            padding: 15px;
             border-radius: 8px;
-            border: 1px solid #ddd;
-            background-color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
-        .asset-details {
-            flex: 1;
-        }
-
-        .asset-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 12px;
-            color: #222;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-            margin-top: 10px;
-        }
-
-        .stat-box {
-            background: #ffffff;
-            padding: 12px 15px;
-            border-radius: 8px;
-            border: 1px solid #e5e5e5;
-        }
-
-        .stat-label {
-            font-size: 12px;
-            color: #777;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .stat-value {
-            font-size: 20px;
-            font-weight: bold;
-            color: #1473e6;
-            margin-top: 4px;
-        }
-
-        @media (max-width: 550px) {
+        @media (max-width: 600px) {
             .search-box {
                 flex-direction: column;
             }
-            .asset-card {
-                flex-direction: column;
+            .tabs {
+                flex-wrap: wrap;
+            }
+            .tab-btn {
+                flex: 1 1 30%;
                 text-align: center;
+                padding: 10px 5px;
             }
         }
     </style>
@@ -181,73 +168,91 @@
 <body>
 
     <div class="container">
-        <span class="logo-badge">Microstock Tool</span>
-        <h1>Adobe Stock Tracker</h1>
-        <p class="subtitle">যেকোনো ফাইল বা ভেক্টর আইকনের Asset ID দিয়ে ডাউনলোড এবং র‍্যাঙ্ক চেক করুন</p>
+        <span class="logo-badge">Pro Microstock Tool</span>
+        <h1>Adobe Stock Advanced Search</h1>
+        <p class="subtitle">Asset ID, Contributor ID অথবা Keywords ব্যবহার করে ডেটা খুঁজুন</p>
+
+        <!-- ট্যাব বাটন -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('asset', this)">🎨 Asset ID</button>
+            <button class="tab-btn" onclick="switchTab('contributor', this)">👤 Contributor</button>
+            <button class="tab-btn" onclick="switchTab('keyword', this)">🔍 Keywords</button>
+        </div>
 
         <!-- সার্চ বক্স -->
         <div class="search-box">
-            <input type="text" id="assetInput" placeholder="যেমন: 543216789 (Asset ID লিখুন)...">
-            <button onclick="trackAsset()">Check Data</button>
+            <input type="text" id="searchInput" placeholder="যেমন: 543216789 (Asset ID লিখুন)...">
+            <button class="search-btn" onclick="performSearch()">Search</button>
         </div>
 
-        <!-- লোডিং মেসেজ -->
+        <!-- লোডার -->
         <div class="loader" id="loader">ডেটা খোঁজা হচ্ছে, অনুগ্রহ করে অপেক্ষা করুন...</div>
 
-        <!-- রেজাল্ট দেখানোর জায়গা -->
+        <!-- রেজাল্ট সেকশন -->
         <div class="result-section" id="resultSection">
-            <div class="asset-card">
-                <img src="https://via.placeholder.com/150/f0f4f8/1473e6?text=Vector+Icon" alt="Asset Preview" class="asset-img" id="assetImage">
-                <div class="asset-details">
-                    <div class="asset-title" id="assetTitle">Minimal Line Art UI Icon Pack - Vector Illustration</div>
-                    <div class="stats-grid">
-                        <div class="stat-box">
-                            <div class="stat-label">Total Downloads</div>
-                            <div class="stat-value" id="downloadCount">0</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">Asset ID</div>
-                            <div class="stat-value" id="displayId">#000000</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">Category</div>
-                            <div class="stat-value" style="font-size: 15px; color: #333;">Vectors / Icons</div>
-                        </div>
-                        <div class="stat-box">
-                            <div class="stat-label">Status</div>
-                            <div class="stat-value" style="font-size: 15px; color: #28a745;">Active</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- জাভাস্ক্রিপ্ট দিয়ে এখানে রেজাল্ট দেখানো হবে -->
         </div>
     </div>
 
     <script>
-        // ডেমো জাভাস্ক্রিপ্ট ফাংশন (টেস্টিংয়ের জন্য)
-        function trackAsset() {
-            const input = document.getElementById('assetInput').value.trim();
+        let currentSearchMode = 'asset'; // ডিফল্ট সার্চ মোড
+
+        // ট্যাব পরিবর্তন করার ফাংশন
+        function switchTab(mode, element) {
+            currentSearchMode = mode;
+            
+            // সব বাটন থেকে active ক্লাস রিমুভ করা
+            let buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // যেটিতে ক্লিক করা হয়েছে সেটিতে active ক্লাস যুক্ত করা
+            element.classList.add('active');
+
+            // সার্চ বক্সের প্লেসহোল্ডার টেক্সট পরিবর্তন করা
+            let inputField = document.getElementById('searchInput');
+            if(mode === 'asset') {
+                inputField.placeholder = "যেমন: 543216789 (Asset ID লিখুন)...";
+            } else if(mode === 'contributor') {
+                inputField.placeholder = "যেমন: 206412345 (Contributor ID লিখুন)...";
+            } else if(mode === 'keyword') {
+                inputField.placeholder = "যেমন: minimal vector icon, background...";
+            }
+            
+            // রেজাল্ট বক্স ক্লিয়ার করা
+            document.getElementById('resultSection').style.display = 'none';
+            inputField.value = '';
+        }
+
+        // সার্চ বাটনে ক্লিক করলে কী হবে তার ফাংশন
+        function performSearch() {
+            const input = document.getElementById('searchInput').value.trim();
             const loader = document.getElementById('loader');
             const resultSection = document.getElementById('resultSection');
 
             if (input === "") {
-                alert("অনুগ্রহ করে একটি Asset ID বা লিংক দিন!");
+                alert("অনুগ্রহ করে সার্চ বক্সে কিছু লিখুন!");
                 return;
             }
 
-            // আগের রেজাল্ট লুকিয়ে লোডার দেখানো
             resultSection.style.display = 'none';
             loader.style.display = 'block';
 
-            // ১ সেকেন্ড পর ডেমো রেজাল্ট দেখানো (পরে এখানে আসল API যুক্ত হবে)
+            // ১ সেকেন্ড পর ডেমো রেজাল্ট দেখানো
             setTimeout(() => {
                 loader.style.display = 'none';
                 resultSection.style.display = 'block';
 
-                // ইউজার যে আইডি দিয়েছে তা দেখানো এবং একটি র‍্যান্ডম ডাউনলোড সংখ্যা দেখানো
-                document.getElementById('displayId').innerText = "#" + input.slice(0, 10);
-                const randomDownloads = Math.floor(Math.random() * 450) + 15;
-                document.getElementById('downloadCount').innerText = randomDownloads + " Downloads";
+                let resultHTML = '';
+
+                if(currentSearchMode === 'asset') {
+                    resultHTML = `<div class="demo-alert">Asset ID #${input} এর ডেটা পাওয়া গেছে! (Total Downloads: ${Math.floor(Math.random() * 500)})</div>`;
+                } else if(currentSearchMode === 'contributor') {
+                    resultHTML = `<div class="demo-alert">Contributor #${input} এর পোর্টফোলিও পাওয়া গেছে! (Total Assets: ${Math.floor(Math.random() * 2000)})</div>`;
+                } else if(currentSearchMode === 'keyword') {
+                    resultHTML = `<div class="demo-alert">"${input}" কি-ওয়ার্ডের ওপর ভিত্তি করে শীর্ষ ট্রেন্ডিং রেজাল্ট!</div>`;
+                }
+
+                resultSection.innerHTML = resultHTML;
             }, 1000);
         }
     </script>
