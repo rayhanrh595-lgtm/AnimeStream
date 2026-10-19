@@ -628,7 +628,7 @@
                 "to": "#22d3ee",
                 "glyph": "\\u25AE"
             },
-            "sourceType": "funhtml5games",
+            "sourceType": "iframe",
             "engine": "html5",
             "url": "https://funhtml5games.com?embed=mazeblox",
             "provider": "FunHTML5Games",
