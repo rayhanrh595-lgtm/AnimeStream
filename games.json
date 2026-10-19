@@ -545,7 +545,6 @@
                 "Controls are shown inside the game."
             ]
         },
-       
         {
             "id": "monster-squad",
             "title": "Monster Squad",
@@ -642,6 +641,198 @@
             "controls": "Mouse / Touch",
             "instructions": [
                 "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "shinobi",
+            "title": "Shinobi",
+            "slug": "shinobi",
+            "description": "Fun and exciting HTML5 game: Shinobi",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/images/shinobi.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=shinobi",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "pacmanfps",
+            "title": "Pacmanfps",
+            "slug": "pacmanfps",
+            "description": "Fun and exciting HTML5 game: Pacmanfps",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/?play=pacmanfps",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=pacmanfps",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "minionkart",
+            "title": "Minionkart",
+            "slug": "minionkart",
+            "description": "Fun and exciting HTML5 game: Minionkart",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/images/minionkart.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=minionkart",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "canabalt",
+            "title": "Canabalt",
+            "slug": "canabalt",
+            "description": "Fun and exciting HTML5 game: Canabalt",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/images/canabalt.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=canabalt",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "streets2",
+            "title": "Streets2",
+            "slug": "streets2",
+            "description": "Fun and exciting HTML5 game: Streets2",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/images/streetsrage.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=streets2",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "popstar",
+            "title": "Popstar",
+            "slug": "popstar",
+            "description": "Fun and exciting HTML5 game: Popstar",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/images/popstar.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=popstar",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
             ]
         }
     ]
