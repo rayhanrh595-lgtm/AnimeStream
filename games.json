@@ -834,6 +834,582 @@
             "instructions": [
                 "Use mouse or touch to play."
             ]
+        },
+        {
+            "id": "doodlejump",
+            "title": "Doodlejump",
+            "slug": "doodlejump",
+            "description": "Fun and exciting HTML5 game: Doodlejump",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/icons/doodlejump.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=doodlejump",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "sasquash",
+            "title": "Sasquash",
+            "slug": "sasquash",
+            "description": "Fun and exciting HTML5 game: Sasquash",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/icons/sasquash.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=sasquash",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "timbercraft",
+            "title": "Timbercraft",
+            "slug": "timbercraft",
+            "description": "Fun and exciting HTML5 game: Timbercraft",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/icons/timbercraft.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=timbercraft",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "pacman",
+            "title": "Pacman",
+            "slug": "pacman",
+            "description": "Fun and exciting HTML5 game: Pacman",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/icons/pacman.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=pacman",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "pokemoncrush",
+            "title": "Pokemoncrush",
+            "slug": "pokemoncrush",
+            "description": "Fun and exciting HTML5 game: Pokemoncrush",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://funhtml5games.com/icons/pokemoncrush.png",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://funhtml5games.com?embed=pokemoncrush",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_31",
+            "title": "Game_31",
+            "slug": "game_31",
+            "description": "Fun and exciting HTML5 game: Game_31",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/fish-eat-getting-big",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_32",
+            "title": "Game_32",
+            "slug": "game_32",
+            "description": "Fun and exciting HTML5 game: Game_32",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/fish-eat-grow-mega",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_33",
+            "title": "Game_33",
+            "slug": "game_33",
+            "description": "Fun and exciting HTML5 game: Game_33",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/steal-animal-eggs-online",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_34",
+            "title": "Game_34",
+            "slug": "game_34",
+            "description": "Fun and exciting HTML5 game: Game_34",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/break-a-lucky-egg-brainrots",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_35",
+            "title": "Game_35",
+            "slug": "game_35",
+            "description": "Fun and exciting HTML5 game: Game_35",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/obby-highest-jump-ever",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_36",
+            "title": "Game_36",
+            "slug": "game_36",
+            "description": "Fun and exciting HTML5 game: Game_36",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/brainrot-mega-parkour",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_37",
+            "title": "Game_37",
+            "slug": "game_37",
+            "description": "Fun and exciting HTML5 game: Game_37",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/italian-brainrot-survive-parkour",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_38",
+            "title": "Game_38",
+            "slug": "game_38",
+            "description": "Fun and exciting HTML5 game: Game_38",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/italian-brainrot-bot-chase",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_39",
+            "title": "Game_39",
+            "slug": "game_39",
+            "description": "Fun and exciting HTML5 game: Game_39",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/baby-rabbit-journey",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_40",
+            "title": "Game_40",
+            "slug": "game_40",
+            "description": "Fun and exciting HTML5 game: Game_40",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/duck-duck-clicker",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_41",
+            "title": "Game_41",
+            "slug": "game_41",
+            "description": "Fun and exciting HTML5 game: Game_41",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/idle-money-factory",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_42",
+            "title": "Game_42",
+            "slug": "game_42",
+            "description": "Fun and exciting HTML5 game: Game_42",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/idle-inventor",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_43",
+            "title": "Game_43",
+            "slug": "game_43",
+            "description": "Fun and exciting HTML5 game: Game_43",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/gas-station-max-gas",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
         }
     ]
 }
