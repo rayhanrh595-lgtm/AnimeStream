@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"
+     role="img" aria-labelledby="ppTitle ppDesc">
+  <title id="ppTitle">PixelPlay Arcade</title>
+  <desc id="ppDesc">A rounded game controller glyph with a violet-to-cyan gradient.</desc>
+
+  <defs>
+    <linearGradient id="ppGrad" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="55%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <linearGradient id="ppShine" x1="16" y1="12" x2="34" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="ppGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- rounded tile -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0b0b14"/>
+  <rect x="2.75" y="2.75" width="58.5" height="58.5" rx="15.25"
+        fill="none" stroke="url(#ppGrad)" stroke-width="1.5" opacity="0.9"/>
+
+  <!-- controller body -->
+  <path d="M20 20h24c7.2 0 12 5.6 12 12.6 0 3.2-1 6.4-2.6 9.2-1.4 2.5-3.6 4.4-6.6 4.4-2.4 0-4-1.3-5.4-3l-2.3-2.9c-.7-.9-1.6-1.3-2.7-1.3h-9.2c-1.1 0-2 .4-2.7 1.3L22.2 43c-1.4 1.7-3 3-5.4 3-3 0-5.2-1.9-6.6-4.4-1.6-2.8-2.6-6-2.6-9.2C7.6 25.6 12.4 20 20 20Z"
+        fill="url(#ppGrad)" filter="url(#ppGlow)"/>
+
+  <!-- highlight -->
+  <path d="M20 20h10c-5 3-7.6 8-7.6 13.4 0 3.6 1.1 7 3 9.8l.6.8h-3.6c-1.1 0-2 .4-2.7 1.3L17.2 48c-1.4 1.7-3 3-5.4 3-3 0-5.2-1.9-6.6-4.4-1.6-2.8-2.6-6-2.6-9.2C2.6 25.6 7.4 20 15 20Z"
+        fill="url(#ppShine)" opacity="0.55"/>
+
+  <!-- d-pad -->
+  <rect x="17" y="29.5" width="12" height="4" rx="1.6" fill="#07070c" opacity="0.92"/>
+  <rect x="21" y="25.5" width="4" height="12" rx="1.6" fill="#07070c" opacity="0.92"/>
+
+  <!-- action buttons -->
+  <circle cx="43.5" cy="28.5" r="3.1" fill="#07070c" opacity="0.92"/>
+  <circle cx="49.5" cy="34.5" r="3.1" fill="#07070c" opacity="0.92"/>
+  <circle cx="43.5" cy="37.5" r="3.1" fill="#07070c" opacity="0.92"/>
+  <circle cx="37.5" cy="34.5" r="3.1" fill="#07070c" opacity="0.92"/>
+
+  <!-- spark -->
+  <path d="M46 15.5l1.1 3.1 3.1 1.1-3.1 1.1L46 24l-1.1-3.2-3.1-1.1 3.1-1.1L46 15.5Z"
+        fill="#ffffff" opacity="0.85"/>
+</svg>
