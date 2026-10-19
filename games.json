@@ -996,328 +996,8 @@
             ]
         },
         {
-            "id": "game_31",
-            "title": "Game_31",
-            "slug": "game_31",
-            "description": "Fun and exciting HTML5 game: Game_31",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/fish-eat-getting-big",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_32",
-            "title": "Game_32",
-            "slug": "game_32",
-            "description": "Fun and exciting HTML5 game: Game_32",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/fish-eat-grow-mega",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_33",
-            "title": "Game_33",
-            "slug": "game_33",
-            "description": "Fun and exciting HTML5 game: Game_33",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/steal-animal-eggs-online",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_34",
-            "title": "Game_34",
-            "slug": "game_34",
-            "description": "Fun and exciting HTML5 game: Game_34",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/break-a-lucky-egg-brainrots",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_35",
-            "title": "Game_35",
-            "slug": "game_35",
-            "description": "Fun and exciting HTML5 game: Game_35",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/obby-highest-jump-ever",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_36",
-            "title": "Game_36",
-            "slug": "game_36",
-            "description": "Fun and exciting HTML5 game: Game_36",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/brainrot-mega-parkour",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_37",
-            "title": "Game_37",
-            "slug": "game_37",
-            "description": "Fun and exciting HTML5 game: Game_37",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/italian-brainrot-survive-parkour",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_38",
-            "title": "Game_38",
-            "slug": "game_38",
-            "description": "Fun and exciting HTML5 game: Game_38",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/italian-brainrot-bot-chase",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_39",
-            "title": "Game_39",
-            "slug": "game_39",
-            "description": "Fun and exciting HTML5 game: Game_39",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/baby-rabbit-journey",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
-            "id": "game_40",
-            "title": "Game_40",
-            "slug": "game_40",
-            "description": "Fun and exciting HTML5 game: Game_40",
-            "category": "Arcade",
-            "tags": [
-                "arcade",
-                "puzzle"
-            ],
-            "thumbnail": "",
-            "theme": {
-                "from": "#8b5cf6",
-                "to": "#22d3ee",
-                "glyph": "\\u25AE"
-            },
-            "sourceType": "iframe",
-            "engine": "html5",
-            "url": "https://www.twoplayergames.org/embed/duck-duck-clicker",
-            "provider": "FunHTML5Games",
-            "license": "CC BY 4.0",
-            "embedAllowed": true,
-            "verified": true,
-            "published": true,
-            "featured": true,
-            "popularity": 95,
-            "addedAt": "2026-10-19",
-            "controls": "Mouse / Touch",
-            "instructions": [
-                "Use mouse or touch to play."
-            ]
-        },
-        {
             "id": "game_41",
-            "title": "Game_41",
+            "title": "Idle Money Factory",
             "slug": "game_41",
             "description": "Fun and exciting HTML5 game: Game_41",
             "category": "Arcade",
@@ -1325,7 +1005,7 @@
                 "arcade",
                 "puzzle"
             ],
-            "thumbnail": "",
+            "thumbnail": "https://images.twoplayergames.org/files/games/other/idle-money-factory.jpg?auto=format&w=100",
             "theme": {
                 "from": "#8b5cf6",
                 "to": "#22d3ee",
@@ -1349,7 +1029,7 @@
         },
         {
             "id": "game_42",
-            "title": "Game_42",
+            "title": "Idle Inventor",
             "slug": "game_42",
             "description": "Fun and exciting HTML5 game: Game_42",
             "category": "Arcade",
@@ -1357,7 +1037,7 @@
                 "arcade",
                 "puzzle"
             ],
-            "thumbnail": "",
+            "thumbnail": "https://files.twoplayergames.org/files/games/other/idle-inventor-200x150.mp4",
             "theme": {
                 "from": "#8b5cf6",
                 "to": "#22d3ee",
@@ -1381,7 +1061,7 @@
         },
         {
             "id": "game_43",
-            "title": "Game_43",
+            "title": "Gas Station: Max Gas",
             "slug": "game_43",
             "description": "Fun and exciting HTML5 game: Game_43",
             "category": "Arcade",
@@ -1389,7 +1069,7 @@
                 "arcade",
                 "puzzle"
             ],
-            "thumbnail": "",
+            "thumbnail": "https://images.twoplayergames.org/files/games/other/gas-station.jpg?auto=format&w=100",
             "theme": {
                 "from": "#8b5cf6",
                 "to": "#22d3ee",
@@ -1409,6 +1089,614 @@
             "controls": "Mouse / Touch",
             "instructions": [
                 "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_46",
+            "title": "Obby Yard Sale",
+            "slug": "game_46",
+            "description": "Fun and exciting HTML5 game: Game_46",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://images.twoplayergames.org/files/games/other/obby-yard-sale.jpg?auto=format&w=100",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/obby-yard-sale",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_47",
+            "title": "Obby World Champions",
+            "slug": "game_47",
+            "description": "Fun and exciting HTML5 game: Game_47",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://images.twoplayergames.org/files/games/other/obby-world-champions.jpg?auto=format&w=100",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/obby-world-champions",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_48",
+            "title": "Ninja Obby Parkour",
+            "slug": "game_48",
+            "description": "Fun and exciting HTML5 game: Game_48",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://files.twoplayergames.org/files/games/g1/ninja-obby-parkour-v1/ninja-obby-parkour-200x150.mp4",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/ninja-obby-parkour",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_49",
+            "title": "Katana",
+            "slug": "game_49",
+            "description": "Fun and exciting HTML5 game: Game_49",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://images.twoplayergames.org/files/games/other/katana.jpg?auto=format&w=200",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/katana",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_50",
+            "title": "Jumping Ninjas Deluxe",
+            "slug": "game_50",
+            "description": "Fun and exciting HTML5 game: Game_50",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://images.twoplayergames.org/files/games/mobile/o1/Jumping_Ninjas_Deluxe/Jumping_Ninjas_Deluxe.jpg?auto=format&w=200",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/jumping-ninjas-deluxe",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_52",
+            "title": "Knife Storm",
+            "slug": "game_52",
+            "description": "Fun and exciting HTML5 game: Game_52",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://images.twoplayergames.org/files/games/other/Knife_Storm/knife_storm_180x135.jpg?auto=format&w=200",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/knife-storm",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "game_53",
+            "title": "Gold Miner Challenge",
+            "slug": "game_53",
+            "description": "Fun and exciting HTML5 game: Game_53",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "puzzle"
+            ],
+            "thumbnail": "https://images.twoplayergames.org/files/games/o1/Gold_Miner_Challenge/Gold_Miner_Challenge.jpg?auto=format&w=100",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/gold-miner-challenge",
+            "provider": "FunHTML5Games",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play."
+            ]
+        },
+        {
+            "id": "fire-and-water",
+            "title": "Fire And Water",
+            "slug": "fire-and-water",
+            "description": "Play Fire And Water online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/fire-and-water",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "basket-random",
+            "title": "Basket Random",
+            "slug": "basket-random",
+            "description": "Play Basket Random online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/basket-random",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "soccer-physics-world-cup",
+            "title": "Soccer Physics World Cup",
+            "slug": "soccer-physics-world-cup",
+            "description": "Play Soccer Physics World Cup online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/soccer-physics-world-cup",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "goalheads-io",
+            "title": "Goalheads Io",
+            "slug": "goalheads-io",
+            "description": "Play Goalheads Io online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/goalheads-io",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "boxing-random",
+            "title": "Boxing Random",
+            "slug": "boxing-random",
+            "description": "Play Boxing Random online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/boxing-random",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "mini-heads-party",
+            "title": "Mini Heads Party",
+            "slug": "mini-heads-party",
+            "description": "Play Mini Heads Party online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/mini-heads-party",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "chicken-scream-race",
+            "title": "Chicken Scream Race",
+            "slug": "chicken-scream-race",
+            "description": "Play Chicken Scream Race online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/chicken-scream-race",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "super-raccoon-world",
+            "title": "Super Raccoon World",
+            "slug": "super-raccoon-world",
+            "description": "Play Super Raccoon World online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/super-raccoon-world",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "fire-dragon-adventurehttps",
+            "title": "Fire Dragon Adventurehttps",
+            "slug": "fire-dragon-adventurehttps",
+            "description": "Play Fire Dragon Adventurehttps online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/fire-dragon-adventurehttps",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "ducky-adventure",
+            "title": "Ducky Adventure",
+            "slug": "ducky-adventure",
+            "description": "Play Ducky Adventure online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/ducky-adventure",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "miners-adventure",
+            "title": "Miners Adventure",
+            "slug": "miners-adventure",
+            "description": "Play Miners Adventure online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/miners-adventure",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
+            ]
+        },
+        {
+            "id": "last-war-survival",
+            "title": "Last War Survival",
+            "slug": "last-war-survival",
+            "description": "Play Last War Survival online for free on PixelPlay Arcade.",
+            "category": "Arcade",
+            "tags": [
+                "arcade",
+                "html5"
+            ],
+            "thumbnail": "",
+            "theme": {
+                "from": "#8b5cf6",
+                "to": "#22d3ee",
+                "glyph": "\\u25AE"
+            },
+            "sourceType": "iframe",
+            "engine": "html5",
+            "url": "https://www.twoplayergames.org/embed/last-war-survival",
+            "provider": "Web",
+            "license": "CC BY 4.0",
+            "embedAllowed": true,
+            "verified": true,
+            "published": true,
+            "featured": true,
+            "popularity": 95,
+            "addedAt": "2026-10-19",
+            "controls": "Mouse / Touch",
+            "instructions": [
+                "Use mouse or touch to play the game."
             ]
         }
     ]
